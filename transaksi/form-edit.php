@@ -6,7 +6,6 @@ $id_pinjam = $_GET['id_pinjam'];
 $pinjam = ambilPeminjaman($kon, $id_pinjam);
 ?>
 
-
 <div class="container">    
 <div class="row mt-4">        
 <div class="col-md-8">            
