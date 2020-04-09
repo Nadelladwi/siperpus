@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(!(isset($_SESSION['id_petugas']))) 
+{    
+  header("Location: http://localhost/siperpus/login/index.php"); 
+} 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +29,7 @@
   <a class="nav-item nav-link" href="http://localhost/siperpus/buku/index.php">Buku</a>
   <a class="nav-item nav-link" href="http://localhost/siperpus/anggota/index.php">Anggota</a>
   <a class="nav-item nav-link" href="http://localhost/siperpus/transaksi/index.php">Peminjaman</a>
-  <a class="nav-item nav-link" href="#">Logout</a>
+  <a class="nav-item nav-link" href="http://localhost/siperpus/login/logout.php">Logout</a>
   </div>
   </div>
 </nav>
